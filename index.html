@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>N-Queens AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>♛ N-QUEENS AI</h1>
+
+        <p class="subtitle">
+            Constraint Satisfaction Puzzle
+        </p>
+
+        <div class="controls">
+
+            <label>Board Size:</label>
+
+            <select id="boardSize">
+                <option value="4">4 × 4</option>
+                <option value="5">5 × 5</option>
+                <option value="6">6 × 6</option>
+                <option value="7">7 × 7</option>
+                <option value="8" selected>8 × 8</option>
+            </select>
+
+            <button id="newGame">
+                New Game
+            </button>
+
+            <button id="check">
+                ✓ Check
+            </button>
+
+            <button id="solve">
+                🤖 Solve with AI
+            </button>
+
+            <button id="reset">
+                ↻ Reset
+            </button>
+
+        </div>
+
+
+        <div class="game-container">
+
+            <!-- Chess Board -->
+
+            <div class="board-section">
+
+                <div id="board"></div>
+
+                <div class="counter">
+
+                    <span id="queenCount">
+                        Queens: 0 / 8
+                    </span>
+
+                    <span id="status">
+                        Place your queens!
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- AI Reasoning -->
+
+            <div class="reasoning">
+
+                <h2>🧠 AI Reasoning</h2>
+
+                <div id="reasoningBox">
+
+                    <p>
+                        Welcome to N-Queens AI!
+                    </p>
+
+                    <p>
+                        Place queens on the board and
+                        try to solve the puzzle.
+                    </p>
+
+                    <p>
+                        Or click
+                        <b>"Solve with AI"</b>
+                        to let the CSP algorithm solve it.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
